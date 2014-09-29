@@ -2,6 +2,14 @@ function status {
   git status $*;
 }
 
+function add {
+  git add $*;
+}
+
+function commit {
+  git commit $*;
+}
+
 function stash {
   git stash $*;
 }
@@ -17,6 +25,10 @@ function fetch {
 
 function pull {
   git pull $*;
+}
+
+function push {
+  git push $*;
 }
 
 function reb {
