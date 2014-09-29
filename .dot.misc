@@ -1,0 +1,26 @@
+alias reload=". ~/.zshrc"
+alias hosts="sudo nano /private/etc/hosts"
+alias up="cd .."
+
+# Show hidden files in Finder
+function showdot {
+  defaults write com.apple.finder AppleShowAllFiles TRUE;
+  killall Finder;
+}
+
+# Hide hidden files in Finder
+function hidedot {
+  defaults write com.apple.finder AppleShowAllFiles FALSE;
+  killall Finder;
+}
+
+function cl {
+  cd $1; ls -A;
+}
+
+function kill-audio {
+  sudo kextunload /System/Library/Extensions/AppleHDA.kext;
+  sudo kextload /System/Library/Extensions/AppleHDA.kext;
+  sudo killall coreaudiod;
+  echo "Done, try changing the volume up and down a bit.";
+}

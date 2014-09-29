@@ -1,0 +1,36 @@
+function status {
+  git status $*;
+}
+
+function stash {
+  git stash $*;
+}
+
+function checkout {
+  git checkout $*;
+  git status;
+}
+
+function fetch {
+  git fetch $*;
+}
+
+function pull {
+  git pull $*;
+}
+
+function reb {
+  git rebase master;
+}
+
+function branch {
+  git branch $*;
+}
+
+function delete {
+  git branch -D $*;
+}
+
+function rename {
+  git branch -m $*;
+}
