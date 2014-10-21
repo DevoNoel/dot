@@ -18,6 +18,10 @@ function cl {
   cd $1; ls -A;
 }
 
+function goto {
+  cd ~/Projects/$1
+}
+
 function kill-audio {
   sudo kextunload /System/Library/Extensions/AppleHDA.kext;
   sudo kextload /System/Library/Extensions/AppleHDA.kext;
