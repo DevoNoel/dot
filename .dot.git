@@ -46,3 +46,12 @@ function delete {
 function rename {
   git branch -m $*;
 }
+
+function draft {
+  git add .;
+  git commit -m "Draft";
+}
+
+function undraft {
+  git log -n 1 | grep Draft && git reset --soft head~1;
+}
