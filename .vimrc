@@ -21,6 +21,9 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'tpope/vim-rails'
 Plugin 'elzr/vim-json'
 Plugin 'itspriddle/vim-stripper'
+Plugin 'digitaltoad/vim-jade'
+Plugin 'leafo/moonscript-vim'
+Plugin 'slim-template/vim-slim'
 call vundle#end()
 
 " Install bundles on first run
@@ -56,4 +59,5 @@ set smarttab
 " Livedown
 let g:livedown_autorun = 1
 map gm :call LivedownPreview()<CR>
+autocmd BufNewFile,BufRead *.md set filetype=markdown
 

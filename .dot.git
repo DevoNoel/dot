@@ -1,49 +1,24 @@
-function status {
-  git status $*;
-}
+alias gst='git status'
+alias ga='git add'
+alias gcm='git commit'
+alias gsh='git stash'
+alias gch='git checkout'
+alias gpl='git pull'
+alias gps='git push'
+alias grb='git rebase'
+alias gbr='git branch'
+alias gdf='git diff'
+alias gl='git log'
+alias grs='git reset'
+alias gcl='git clone'
+alias gft='git fetch'
+alias grv='git revert'
 
-function add {
-  git add $*;
-}
-
-function commit {
-  git commit $*;
-}
-
-function stash {
-  git stash $*;
-}
-
-function checkout {
-  git checkout $*;
-  git status;
-}
-
-function fetch {
-  git fetch $*;
-}
-
-function pull {
-  git pull $*;
-}
-
-function push {
-  git push $*;
-}
-
-function reb {
-  git rebase master;
-}
-
-function branch {
-  git branch $*;
-}
-
-function delete {
+function gdl {
   git branch -D $*;
 }
 
-function rename {
+function grn {
   git branch -m $*;
 }
 
@@ -54,4 +29,5 @@ function draft {
 
 function undraft {
   git log -n 1 | grep Draft && git reset --soft head~1;
+  git reset HEAD .;
 }

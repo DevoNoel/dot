@@ -1,5 +1,5 @@
 alias reload=". ~/.zshrc"
-alias hosts="sudo nano /private/etc/hosts"
+alias hosts="sudo vim /private/etc/hosts"
 alias up="cd .."
 
 # Show hidden files in Finder
@@ -27,4 +27,8 @@ function kill-audio {
   sudo kextload /System/Library/Extensions/AppleHDA.kext;
   sudo killall coreaudiod;
   echo "Done, try changing the volume up and down a bit.";
+}
+
+function love {
+  /Applications/love.app/Contents/MacOS/love $1
 }

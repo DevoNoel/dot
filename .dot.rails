@@ -1,4 +1,4 @@
 function start {
-  bundle;
-  foreman start -f Procfile;
+  bundle install;
+  foreman start;
 }
