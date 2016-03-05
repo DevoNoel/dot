@@ -19,7 +19,6 @@ export TERM=xterm-256color
 . ~/.dot.git
 . ~/.dot.rails
 . ~/.dot.rust
-. ~/.dot.500px
 
 export GOPATH=~/.go
 export GOROOT=/usr/local/opt/go14/libexec
@@ -28,7 +27,6 @@ export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
 # chefdk
 export PATH="/opt/chefdk/bin:$PATH"
 
-. ~/.env.500px
 . ~/.env.personal
 
 . ~/Builds/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
