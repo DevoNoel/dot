@@ -1,1 +1,1 @@
-alias rustup='curl -sf -L https://static.rust-lang.org/rustup.sh | sh'
+alias rup="curl https://sh.rustup.rs -sSf | sh"

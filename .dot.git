@@ -1,3 +1,4 @@
+alias gin='git init'
 alias gst='git status'
 alias ga='git add'
 alias gcm='git commit'
