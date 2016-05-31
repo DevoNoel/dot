@@ -2,3 +2,5 @@ function start {
   bundle install;
   foreman start;
 }
+
+alias be="bundle exec";
