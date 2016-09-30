@@ -4,3 +4,4 @@ function start {
 }
 
 alias be="bundle exec";
+alias bi="bundle install";
