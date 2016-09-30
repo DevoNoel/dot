@@ -2,6 +2,7 @@ alias reload=". ~/.zshrc"
 alias hosts="sudo vim /private/etc/hosts"
 alias up="cd .."
 alias rustreload=". ~/.cargo/env"
+alias post="postgres -D /usr/local/var/postgres"
 
 # Show hidden files in Finder
 function showdot {
