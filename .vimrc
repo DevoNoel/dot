@@ -24,6 +24,8 @@ Plugin 'itspriddle/vim-stripper'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'leafo/moonscript-vim'
 Plugin 'slim-template/vim-slim'
+Plugin 'elixir-lang/vim-elixir'
+Plugin 'posva/vim-vue'
 call vundle#end()
 
 " Install bundles on first run
@@ -45,6 +47,7 @@ set nowrap
 set showcmd
 set ignorecase
 set smartcase
+set wrap linebreak nolist
 highlight clear SignColumn
 
 " Tabs
