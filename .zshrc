@@ -1,9 +1,11 @@
 export PATH=$PATH:/usr/local/sbin
 export PATH=$PATH:/usr/local/bin
 export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
+
 eval "$(rbenv init -)"
 
-export EDITOR="/usr/bin/vim"
+export EDITOR="vim"
 
 # Command Prompt
 export PS1="%d\$ "
