@@ -15,6 +15,7 @@ alias gcl='git clone'
 alias gft='git fetch'
 alias grv='git revert'
 alias grt='git remote'
+alias gmg='git merge'
 
 function gdl {
   git branch -D $*;
