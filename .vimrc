@@ -26,6 +26,7 @@ Plugin 'leafo/moonscript-vim'
 Plugin 'slim-template/vim-slim'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'posva/vim-vue'
+Plugin 'scrooloose/nerdtree'
 call vundle#end()
 
 " Install bundles on first run
@@ -48,6 +49,7 @@ set showcmd
 set ignorecase
 set smartcase
 set wrap linebreak nolist
+set hidden
 highlight clear SignColumn
 
 " Tabs
@@ -64,3 +66,5 @@ let g:livedown_autorun = 1
 map gm :call LivedownPreview()<CR>
 autocmd BufNewFile,BufRead *.md set filetype=markdown
 
+" NERDTree
+map <C-n> :NERDTreeToggle<CR>
