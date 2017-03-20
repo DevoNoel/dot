@@ -21,6 +21,7 @@ export TERM=xterm-256color
 . ~/.dot.git
 . ~/.dot.rails
 . ~/.dot.rust
+. ~/.dot.node
 
 export GOPATH=~/.go
 export GOROOT=/usr/local/opt/go14/libexec
