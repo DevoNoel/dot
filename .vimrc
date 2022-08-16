@@ -50,6 +50,7 @@ set ignorecase
 set smartcase
 set wrap linebreak nolist
 set hidden
+set clipboard=unnamed
 highlight clear SignColumn
 
 " Tabs
